@@ -107,11 +107,11 @@ async def sec(interaction: discord.Interaction, secenekler: str):
 @bot.tree.command(name="cekilis", description="Çekiliş başlatır")
 @app_commands.describe(odul="Çekiliş ödülü")
 async def cekilis(interaction: discord.Interaction, odul: str):
-    await interaction.response.send_message(f"🎉 ÇEKİLİŞ BAŞLADI! Ödül: **{odul}** 🎉")
+    await interaction.response.send_message(f"🎉 ÇEKİLİŞ BAŞLADI! Ödül: **{odul}** ")
 
 @bot.tree.command(name="eglence", description="Rastgele eğlence mesajı")
 async def eglence(interaction: discord.Interaction):
-    sozler = ["Bugün şanslı günün 😎","Bir blok daha kır 💎","Admin seni izliyor 👀"]
+    sozler = ["Bugün şanslı günün ","Bir blok daha kır ","Admin seni izliyor "]
     await interaction.response.send_message(random.choice(sozler))
 
 @hilepaylas.error
